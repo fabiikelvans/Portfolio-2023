@@ -3,6 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Suspense, useMemo, useRef } from "react";
 import Stripe from "../../components/Shaders/Stripe/Stripe";
 import WaterColor01 from "../../components/Shaders/Water-Color-1/WaterColor-01";
+import Particle from "../../components/Shaders/Particles/Particle";
 
 function ShaderPage() {
   return (
@@ -13,6 +14,7 @@ function ShaderPage() {
 
       <Suspense fallback={null}>
       <WaterColor01/>
+      {/*    <Particle/>*/}
       <OrbitControls />
       </Suspense>
       

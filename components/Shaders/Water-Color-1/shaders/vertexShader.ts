@@ -100,6 +100,8 @@ void main() {
     vec3 newPosition = position * (noise + 0.5);
 
     vColor = hsv2rgb(vec3(noise * 0.1 + 0.03, 0.8,0.8));
+    
+    vUv = uv;
 
     vNormal = normal;
   
